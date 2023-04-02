@@ -1,5 +1,5 @@
 # Maven
-- task: PublishBuildArtifacts@1
+ task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'warfile'
@@ -9,7 +9,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- master
+ master
 
 pool:
   vmImage: ubuntu-latest
